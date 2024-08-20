@@ -54,6 +54,9 @@ button{
     cursor: pointer;
     border-radius: 40px;
 }
+/* .hide{
+    display:none;
+} */
 ul li{
     list-style: none;
     font-size: 17px;
@@ -62,7 +65,7 @@ ul li{
     cursor: pointer;
     position: relative;
 }
-ul li ::before{
+ul li::before{
     content: ' ';
     position: absolute;
     height:28px;
@@ -73,4 +76,26 @@ ul li ::before{
     background-position: center;
     top: 12px;
     left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(./To-Do-Img/images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
 }
